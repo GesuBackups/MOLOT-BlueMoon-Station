@@ -94,7 +94,7 @@ GLOBAL_LIST_EMPTY(ash_storm_sounds)
 	severity = clamp(new_severity, 0, max_severity)
 	var/normalized_severity = severity / max_severity
 	for(var/viewer as anything in particle_viewers)
-		for(var/atom/holder as anything in particle_viewers[viewer])
+		for(var/atom/movable/holder as anything in particle_viewers[viewer])
 			var/particles/weather/particle_effect = holder.particles
 			if(!isnull(particle_effect))
 				particle_effect.animate_severity(normalized_severity, wind_sign)
