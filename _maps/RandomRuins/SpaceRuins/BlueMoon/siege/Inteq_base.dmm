@@ -8475,7 +8475,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/bluemoon/inteq_forgotten_ship)
 "yo" = (
-/obj/machinery/rnd/production/protolathe/bioaegis,
+/obj/machinery/rnd/production/protolathe/bioaegis/syndicate,
 /turf/open/floor/plasteel/dark,
 /area/InteQ_ship)
 "yp" = (
