@@ -239,7 +239,8 @@
 
 /obj/item/gun/medbeam/syndicate/dropped(mob/user)
 	if(uber_deployed && isliving(user))
-		user.remove_status_effect(/datum/status_effect/ubercharged)
+		var/mob/living/living_user = user
+		living_user.remove_status_effect(/datum/status_effect/ubercharged)
 	..()
 
 /// Пока луч работает, уберзаряд копится сам собой
